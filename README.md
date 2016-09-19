@@ -1,8 +1,6 @@
 # jekyll-simple-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+custom jekyll theme for [my blog](https://whybe.github.io).
 
 ## Installation
 
@@ -28,6 +26,8 @@ Or install it yourself as:
 
 ## Usage
 
+You might define variables of `site` or `page` to use includes below.
+
 ### disqus
  * `page.comments = true`
  * `jekyll.environment = "production"`
@@ -44,18 +44,24 @@ Or install it yourself as:
 ### head
  * `site.baseurl`
 
-## Contributing
+## Preview
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+clone this repository:
 
-## Development
+    $ git clone [THIS REPOSITORY]
+    
+and then execute:
 
-To set up your environment to develop this theme, run `bundle install`.
+    $ bundle
+    
+and then build:
 
-You theme is setup just like a normal Jelyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+    $ jekyll build -s example -d example/_site
+    
+and then server:
 
-When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
-
+    $ jekyll serve -s example -d example/_site
+    
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
